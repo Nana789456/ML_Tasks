@@ -3,7 +3,7 @@ Task:
 
 Сontent NoteBook "Prediction_of_ goods_quantity_for_7 days":
 	1. ETL (Парсинг данных о целевом товаре из БД ClickHouse посредством SQL запросов)
-	2. EDA (Раpведочный анализ полученных данных)
+	2. EDA (Разведочный анализ полученных данных)
 	3. Forecasting
 		3.1 LinearRegression
 			3.1.1 Training on non-smoothed data
