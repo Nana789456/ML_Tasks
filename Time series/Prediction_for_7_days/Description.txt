@@ -1,0 +1,21 @@
+Task:
+	Предсказать продажи для целевого товара в штуках на последующую неделю.
+
+Сontent NoteBook "Prediction_of_ goods_quantity_for_7 days":
+	1. ETL (Парсинг данных о целевом товаре из БД ClickHouse посредством SQL запросов)
+	2. EDA (Раpведочный анализ полученных данных)
+	3. Forecasting
+		3.1 LinearRegression
+			3.1.1 Training on non-smoothed data
+			3.1.2 Training on smoothed data
+		3.2 Dense Model
+		3.3 Dense Model(Feature engineering with tsfresh library)
+		3.4 Conv model
+		3.5 Conv + GRU model
+		3.6 Prediction for seven steps in a row?
+	4. Final Prediction
+				
+Global conclusion:
+	Данных было достаточно мало (всего на 361 день, что давало почти столько же примеров), 
+	поэтому добиться MAE ниже 7 товаров не получилось. Однако это не самый плохой результат, 
+	учитывая что в среднем ежедневно продается 27 товаров. Но конечно есть куда стремиться.
