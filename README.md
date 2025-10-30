@@ -1,1 +1,1 @@
-# Репозиторий с ML задачами
+# Machine learning tasks
